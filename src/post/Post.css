@@ -1,0 +1,134 @@
+.post {
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  border-bottom: 1px solid #262626;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #262626;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.post-location {
+  font-size: 12px;
+  color: #a8a8a8;
+  margin-top: 1px;
+}
+
+.more-options {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.post-media-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+}
+
+.post-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.volume-control {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.left-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.right-actions {
+  display: flex;
+}
+
+.action-btn {
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.1s ease;
+}
+
+.action-btn:hover {
+  color: #a8a8a8;
+}
+
+.action-count {
+  font-size: 13px;
+  margin-left: 6px;
+  color: #ffffff;
+}
+
+.post-caption {
+  padding: 0 16px 8px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.username-bold {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.caption-text {
+  color: #ffffff;
+}
+
+.time-ago {
+  padding: 0 16px 16px;
+  font-size: 12px;
+  color: #a8a8a8;
+  text-transform: uppercase;
+}
