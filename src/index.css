@@ -8,9 +8,10 @@ body {
   max-width: 390px;
   min-height: 100vh;
   margin: 0 auto;
-  background: #000000;
-  position: relative;
-  overflow-x: hidden;
+  background: #100f11;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 @media (min-width: 768px) {
