@@ -1,6 +1,6 @@
-# Instagram App
+# Facebook App
 
-A web-based [Instagram](https://www.instagram.com/) clone built using [React](https://react.dev/).
+A web-based [Facebook](https://www.facebook.com/) clone built using [React](https://react.dev/).
 
 ## License
 
