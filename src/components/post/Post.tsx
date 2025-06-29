@@ -40,7 +40,19 @@ const Post: React.FC<PostProps> = ({ post }) => {
           </button>
         </div>
       </div>
-      {post.caption && <div className="post-caption">{post.caption}</div>}
+      {post.caption && (
+        <div
+          className="post-caption"
+          style={{
+            marginBottom:
+              !post.image && post.reactions && post.reactions > 0
+                ? "2px"
+                : "12px",
+          }}
+        >
+          {post.caption}
+        </div>
+      )}
       {post.image && (
         <div className="post-image">
           <img src={post.image} />
