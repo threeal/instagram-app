@@ -1,0 +1,63 @@
+import React from "react";
+import type { PostData } from "../../data/posts";
+import CommentIcon from "./assets/comment-icon.png";
+import LikeIcon from "./assets/like-icon.png";
+import SendIcon from "./assets/send-icon.png";
+import ShareIcon from "./assets/share-icon.png";
+import CloseIcon from "./components/CloseIcon";
+import DetailsIcon from "./components/DetailsIcon";
+import PrivacyIcon from "./components/PrivacyIcon";
+import "./Post.css";
+
+export interface PostProps {
+  post: PostData;
+}
+
+const Post: React.FC<PostProps> = ({ post }) => {
+  return (
+    <div className="post">
+      <div className="post-header">
+        <div className="post-author-info">
+          <img className="post-author-avatar" src={post.author.avatar} />
+          <div className="post-author-details">
+            <h3>{post.author.name}</h3>
+            <div className="post-meta">
+              <span>{post.date}</span>
+              <span>•</span>
+              <PrivacyIcon className="post-privacy-icon" />
+            </div>
+          </div>
+        </div>
+        <div className="post-header-buttons">
+          <button className="post-header-button">
+            <DetailsIcon className="post-header-button-icon" />
+          </button>
+          <button className="post-header-button">
+            <CloseIcon className="post-header-button-icon" />
+          </button>
+        </div>
+      </div>
+      <img className="post-image" src={post.image} />
+      <div className="post-footer">
+        <button className="post-footer-button">
+          <img className="post-footer-button-icon" src={LikeIcon} />
+          <span>Suka</span>
+        </button>
+        <button className="post-footer-button">
+          <img className="post-footer-button-icon" src={CommentIcon} />
+          <span>Komentar</span>
+        </button>
+        <button className="post-footer-button">
+          <img className="post-footer-button-icon" src={SendIcon} />
+          <span>Kirim</span>
+        </button>
+        <button className="post-footer-button">
+          <img className="post-footer-button-icon" src={ShareIcon} />
+          <span>Bagikan</span>
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Post;
