@@ -11,6 +11,11 @@ body {
   user-select: none;
 }
 
+img {
+  /* Disable image selection. */
+  pointer-events: none;
+}
+
 #root {
   display: flex;
   flex-direction: column;

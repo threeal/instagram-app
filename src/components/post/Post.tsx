@@ -18,7 +18,9 @@ const Post: React.FC<PostProps> = ({ post }) => {
     <div className="post">
       <div className="post-header">
         <div className="post-author-info">
-          <img className="post-author-avatar" src={post.author.avatar} />
+          <div className="post-author-avatar">
+            <img src={post.author.avatar} />
+          </div>
           <div className="post-author-details">
             <h3>{post.author.name}</h3>
             <div className="post-meta">
@@ -37,7 +39,9 @@ const Post: React.FC<PostProps> = ({ post }) => {
           </button>
         </div>
       </div>
-      <img className="post-image" src={post.image} />
+      <div className="post-image">
+        <img src={post.image} />
+      </div>
       <div className="post-footer">
         <button className="post-footer-button">
           <img className="post-footer-button-icon" src={LikeIcon} />
