@@ -1,15 +1,15 @@
 body {
-  background: #1a1a1a;
   margin: 0;
+  background: #1a1a1a;
   padding: 0;
 }
 
 #root {
-  max-width: 390px;
-  min-height: 100vh;
+  position: relative;
   margin: 0 auto;
   background: #000000;
-  position: relative;
+  max-width: 390px;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
