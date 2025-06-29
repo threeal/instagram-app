@@ -6,6 +6,7 @@ import SendIcon from "./assets/send-icon.png";
 import ShareIcon from "./assets/share-icon.png";
 import CloseIcon from "./components/CloseIcon";
 import DetailsIcon from "./components/DetailsIcon";
+import ReactionIcon from "./components/ReactionIcon";
 import PrivacyIcon from "./components/PrivacyIcon";
 import "./Post.css";
 
@@ -46,22 +47,32 @@ const Post: React.FC<PostProps> = ({ post }) => {
         </div>
       )}
       <div className="post-footer">
-        <button className="post-footer-button">
-          <img className="post-footer-button-icon" src={LikeIcon} />
-          <span>Suka</span>
-        </button>
-        <button className="post-footer-button">
-          <img className="post-footer-button-icon" src={CommentIcon} />
-          <span>Komentar</span>
-        </button>
-        <button className="post-footer-button">
-          <img className="post-footer-button-icon" src={SendIcon} />
-          <span>Kirim</span>
-        </button>
-        <button className="post-footer-button">
-          <img className="post-footer-button-icon" src={ShareIcon} />
-          <span>Bagikan</span>
-        </button>
+        {post.reactions && post.reactions > 0 && (
+          <div className="post-interactions">
+            <div className="post-reaction">
+              <ReactionIcon className="post-reaction-icon" />
+              {post.reactions}
+            </div>
+          </div>
+        )}
+        <div className="post-footer-buttons">
+          <button className="post-footer-button">
+            <img className="post-footer-button-icon" src={LikeIcon} />
+            <span>Suka</span>
+          </button>
+          <button className="post-footer-button">
+            <img className="post-footer-button-icon" src={CommentIcon} />
+            <span>Komentar</span>
+          </button>
+          <button className="post-footer-button">
+            <img className="post-footer-button-icon" src={SendIcon} />
+            <span>Kirim</span>
+          </button>
+          <button className="post-footer-button">
+            <img className="post-footer-button-icon" src={ShareIcon} />
+            <span>Bagikan</span>
+          </button>
+        </div>
       </div>
     </div>
   );
