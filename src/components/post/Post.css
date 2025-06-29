@@ -1,0 +1,136 @@
+.post {
+  background: #ffffff;
+  width: 100%;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 11px;
+  height: 62px;
+}
+
+.post-author-info {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.post-author-avatar {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.post-author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.post-author-details h3 {
+  cursor: pointer;
+  margin: 0;
+  color: #101010;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  color: #676767;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.post-privacy-icon {
+  width: 12px;
+  height: 12px;
+  fill: #676767;
+}
+
+.post-header-buttons {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.post-header-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  width: 42px;
+  height: 42px;
+}
+
+.post-header-button:hover {
+  background: #f2f2f2;
+}
+
+.post-header-button:active {
+  background: #e5e5e5;
+}
+
+.post-header-button-icon {
+  width: 20px;
+  height: 20px;
+  fill: #676767;
+}
+
+.post-image {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.post-footer {
+  display: flex;
+  box-sizing: border-box;
+  padding: 3px;
+  width: 100%;
+  height: 40px;
+}
+
+.post-footer-button {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  height: 100%;
+  color: #676767;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.post-footer-button:hover {
+  background: #f2f2f2;
+}
+
+.post-footer-button:active {
+  background: #e5e5e5;
+}
+
+.post-footer-button-icon {
+  filter: saturate(100%) invert(40%) saturate(0%);
+  width: 20px;
+  height: 20px;
+}
