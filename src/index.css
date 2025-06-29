@@ -3,6 +3,22 @@ body {
   background: #1a1a1a;
   padding: 0;
   font-family: -apple-system, Roboto;
+
+  /* Disable text selection. */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button {
+  /* Disable button highlight effect on iOS. */
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  /* Disable image selection. */
+  pointer-events: none;
 }
 
 #root {
@@ -12,7 +28,12 @@ body {
   margin: 0 auto;
   background: #ccccd4;
   max-width: 390px;
-  min-height: 100vh;
+  height: 100dvh;
+
+  /* Disable scrollbar and overscroll behavior. */
+  overflow-y: scroll;
+  overscroll-behavior: none;
+  scrollbar-width: none;
 }
 
 @media (min-width: 768px) {
