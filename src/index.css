@@ -28,7 +28,12 @@ img {
   margin: 0 auto;
   background: #ccccd4;
   max-width: 390px;
-  min-height: 100vh;
+  height: 100dvh;
+
+  /* Disable scrollbar and overscroll behavior. */
+  overflow-y: scroll;
+  overscroll-behavior: none;
+  scrollbar-width: none;
 }
 
 @media (min-width: 768px) {
