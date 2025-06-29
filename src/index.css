@@ -11,6 +11,11 @@ body {
   user-select: none;
 }
 
+button {
+  /* Disable button highlight effect on iOS. */
+  -webkit-tap-highlight-color: transparent;
+}
+
 img {
   /* Disable image selection. */
   pointer-events: none;
