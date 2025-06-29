@@ -39,8 +39,13 @@ const Post: React.FC<PostProps> = ({ post }) => {
           </button>
         </div>
       </div>
-      <div className="post-image">
-        <img src={post.image} />
+      <div className="post-content">
+        {post.caption && <div className="post-caption">{post.caption}</div>}
+        {post.image && (
+          <div className="post-image">
+            <img src={post.image} />
+          </div>
+        )}
       </div>
       <div className="post-footer">
         <button className="post-footer-button">
