@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import type { PostData } from "../../data/posts";
 import CommentIcon from "./assets/comment-icon.png";
 import LikeIcon from "./assets/like-icon.png";
+import LikeSolidIcon from "./assets/like-solid-icon.png";
 import SendIcon from "./assets/send-icon.png";
 import ShareIcon from "./assets/share-icon.png";
 import CloseIcon from "./components/CloseIcon";
@@ -15,6 +16,14 @@ export interface PostProps {
 }
 
 const Post: React.FC<PostProps> = ({ post }) => {
+  const [isLiked, setIsLiked] = useState(false);
+
+  const reactions = (post.reactions ?? 0) + (isLiked ? 1 : 0);
+
+  const onLikeClicked = () => {
+    setIsLiked(!isLiked);
+  };
+
   return (
     <div className="post">
       <div className="post-header">
@@ -44,10 +53,7 @@ const Post: React.FC<PostProps> = ({ post }) => {
         <div
           className="post-caption"
           style={{
-            marginBottom:
-              !post.image && post.reactions && post.reactions > 0
-                ? "2px"
-                : "12px",
+            marginBottom: !post.image && reactions > 0 ? "2px" : "12px",
           }}
         >
           {post.caption}
@@ -59,17 +65,23 @@ const Post: React.FC<PostProps> = ({ post }) => {
         </div>
       )}
       <div className="post-footer">
-        {post.reactions && post.reactions > 0 && (
+        {reactions > 0 && (
           <div className="post-interactions">
             <div className="post-reaction">
               <ReactionIcon className="post-reaction-icon" />
-              {post.reactions}
+              {reactions}
             </div>
           </div>
         )}
         <div className="post-footer-buttons">
-          <button className="post-footer-button">
-            <img className="post-footer-button-icon" src={LikeIcon} />
+          <button
+            className={`post-footer-button ${isLiked ? "liked" : ""}`}
+            onClick={onLikeClicked}
+          >
+            <img
+              className={`post-footer-button-icon ${isLiked ? "liked" : ""}`}
+              src={isLiked ? LikeSolidIcon : LikeIcon}
+            />
             <span>Suka</span>
           </button>
           <button className="post-footer-button">

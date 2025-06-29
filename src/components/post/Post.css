@@ -163,6 +163,10 @@
   font-size: 12px;
 }
 
+.post-footer-button.liked {
+  color: #1d6fda;
+}
+
 .post-footer-button:active {
   background: #e5e5e5;
 }
@@ -171,4 +175,9 @@
   filter: saturate(100%) invert(40%) saturate(0%);
   width: 20px;
   height: 20px;
+}
+
+.post-footer-button-icon.liked {
+  filter: saturate(100%) invert(28%) sepia(79%) saturate(3739%)
+    hue-rotate(207deg) brightness(96%) contrast(78%);
 }
