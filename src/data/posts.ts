@@ -10,6 +10,7 @@ export interface PostData {
   author: UserData;
   caption?: string;
   image?: string;
+  reactions?: number;
   date: string;
 }
 
@@ -19,6 +20,7 @@ export const posts: PostData[] = [
     caption: "Hari ini cuacanya cerah banget! ☀️",
     image:
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&h=400&fit=crop",
+    reactions: 3,
     date: "15 Jun",
   },
   {
@@ -38,17 +40,20 @@ export const posts: PostData[] = [
       "Akhirnya bisa liburan juga setelah sekian lama nggak ke luar kota. Suasana pegunungan memang nggak pernah gagal bikin hati tenang dan pikiran fresh.",
     image:
       "https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=500&h=400&fit=crop",
+    reactions: 1,
     date: "10 Des 2023",
   },
   {
     author: amiraHassan,
     image:
       "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500&h=400&fit=crop",
+    reactions: 20,
     date: "7 Mei",
   },
   {
     author: budiSantoso,
     caption: "Ngopi dulu biar waras ☕️",
+    reactions: 2,
     date: "30 Jan 2023",
   },
   {
@@ -63,6 +68,7 @@ export const posts: PostData[] = [
     author: ranggaPratama,
     image:
       "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=500&h=400&fit=crop",
+    reactions: 5,
     date: "28 Feb",
   },
   {
@@ -76,17 +82,20 @@ export const posts: PostData[] = [
       "Senja di pantai selalu memberikan rasa damai. Nggak perlu kata-kata, cukup duduk dan menikmati setiap detiknya.",
     image:
       "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&h=400&fit=crop",
+    reactions: 50,
     date: "5 Sep 2024",
   },
   {
     author: sitiNurhaliza,
     caption: "Masakan rumah memang selalu juara! 🍲",
+    reactions: 12,
     date: "18 Agu",
   },
   {
     author: ranggaPratama,
     caption:
       "Proyek baru, tantangan baru! Semoga semua berjalan lancar sampai akhir.",
+    reactions: 1,
     date: "12 Nov 2023",
   },
   {
@@ -98,6 +107,7 @@ export const posts: PostData[] = [
   {
     author: budiSantoso,
     caption: "Ayo semangat mulai minggu baru! 💪",
+    reactions: 2,
     date: "4 Mar",
   },
   {
