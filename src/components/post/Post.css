@@ -100,12 +100,12 @@
 .post-image {
   cursor: pointer;
   width: 100%;
-  max-height: 500px;
 }
 
 .post-image img {
   display: block;
   width: 100%;
+  max-height: 500px;
   object-fit: cover;
 }
 
