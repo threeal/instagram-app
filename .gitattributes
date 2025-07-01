@@ -1,3 +1,4 @@
+**/*.mp4 -diff
 **/*.png -diff
 **/*.svg -diff
 pnpm-lock.yaml -diff linguist-generated
