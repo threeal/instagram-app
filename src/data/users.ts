@@ -4,9 +4,8 @@ export interface UserData {
 }
 
 export const amiraHassan: UserData = {
-  name: "Amira Hasan",
-  avatar:
-    "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face",
+  name: "Alfi Maulana",
+  avatar: "/alfi.png",
 };
 
 export const budiSantoso: UserData = {

@@ -17,9 +17,9 @@ export interface PostData {
 export const posts: PostData[] = [
   {
     author: amiraHassan,
-    caption: "Hari ini cuacanya cerah banget! ☀️",
-    image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&h=400&fit=crop",
+    caption:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    image: "/book.png",
     reactions: 3,
     date: "15 Jun",
   },
