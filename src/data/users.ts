@@ -9,9 +9,8 @@ export const amiraHassan: UserData = {
 };
 
 export const budiSantoso: UserData = {
-  name: "Budi Santoso",
-  avatar:
-    "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face",
+  name: "Nurcahya Salon",
+  avatar: "/nurcahya.png",
 };
 
 export const sitiNurhaliza: UserData = {
@@ -24,4 +23,9 @@ export const ranggaPratama: UserData = {
   name: "Rangga Pratama",
   avatar:
     "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=100&h=100&fit=crop&crop=face",
+};
+
+export const aniesLutfi: UserData = {
+  name: "Anies Lutfi",
+  avatar: "/anieslutfi.png",
 };
